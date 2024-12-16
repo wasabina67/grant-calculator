@@ -17,12 +17,28 @@ function App() {
         </ul>
       </ul>
       <div>
-        <h3>補助上限</h3>
+        <h3>
+          <label htmlFor="limit">補助上限</label>
+        </h3>
+        <input
+          type="number"
+          id="limit"
+          style={{ "margin": "0px 0px 0px 20px" }}
+        />
       </div>
       <div>
-        <h3>補助率</h3>
+        <h3>
+          <label htmlFor="rate">補助率</label>
+        </h3>
+        <input
+          type="number"
+          id="rate"
+          style={{ "margin": "0px 0px 0px 20px" }}
+        />
       </div>
-      <button>
+      <button
+        style={{ "margin": "20px 0px 0px 0px" }}
+      >
         計算
       </button>
       <div>
