@@ -17,33 +17,33 @@ function App() {
         </ul>
       </ul>
       <div>
-        <h3>
+        <h3 style={{ marginBottom: "5px" }}>
           <label htmlFor="limit">補助上限</label>
         </h3>
         <input
           type="number"
           id="limit"
-          style={{ "margin": "0px 0px 0px 20px" }}
+          style={{ margin: "0px 0px 0px 20px" }}
         />
       </div>
       <div>
-        <h3>
+        <h3 style={{ marginBottom: "5px" }}>
           <label htmlFor="rate">補助率</label>
         </h3>
         <input
           type="number"
           id="rate"
-          style={{ "margin": "0px 0px 0px 20px" }}
+          style={{ margin: "0px 0px 0px 20px" }}
         />
       </div>
       <button
-        style={{ "margin": "20px 0px 0px 0px" }}
+        style={{ margin: "20px 0px 0px 0px" }}
       >
         計算
       </button>
       <div>
-        <h3>事業費</h3>
-        <p style={{ "margin": "0px 0px 0px 20px" }}>266.67 万円</p>
+        <h3 style={{ marginBottom: "5px" }}>事業費</h3>
+        <p style={{ margin: "0px 0px 0px 20px" }}>266.67 万円</p>
       </div>
     </div>
   );
