@@ -17,16 +17,17 @@ function App() {
         </ul>
       </ul>
       <div>
-        補助上限
+        <h3>補助上限</h3>
       </div>
       <div>
-        補助率
+        <h3>補助率</h3>
       </div>
       <button>
         計算
       </button>
       <div>
-        事業費
+        <h3>事業費</h3>
+        <p style={{ "margin": "0px 0px 0px 20px" }}>266.67 万円</p>
       </div>
     </div>
   );
