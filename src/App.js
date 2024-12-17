@@ -68,10 +68,12 @@ function App() {
       >
         計算
       </button>
-      <div>
-        <h3 style={{ marginBottom: "5px" }}>事業費</h3>
-        <p style={{ margin: "0px 0px 0px 20px" }}><strong>{result}</strong> 万円</p>
-      </div>
+      {result !== null && (
+        <div>
+          <h3 style={{ marginBottom: "5px" }}>事業費</h3>
+          <p style={{ margin: "0px 0px 0px 20px" }}><strong>{result}</strong> 万円</p>
+        </div>
+      )}
     </div>
   );
 }
