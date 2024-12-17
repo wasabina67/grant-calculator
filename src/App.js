@@ -1,4 +1,12 @@
+import React, { useState } from "react";
+
 function App() {
+  const [grantLimit, setGrantLimit] = useState("");
+  const [grantRate, setGrantRate] = useState("");
+  const [result, setResult] = useState(null);
+
+  const calc = () => {};
+
   return (
     <div style={{ maxWidth: "500px", margin: "0 auto", fontFamily: "Arial, sans-serif" }}>
       <h1>grant-calculator</h1>
