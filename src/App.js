@@ -46,6 +46,9 @@ function App() {
           id="limit"
           value={grantLimit}
           onChange={(e) => setGrantLimit(e.target.value)}
+          step="1"
+          min="1"
+          max="9999"
           placeholder="200"
           style={{ margin: "0px 0px 0px 20px" }}
         />
@@ -59,11 +62,15 @@ function App() {
           id="rate"
           value={grantRate}
           onChange={(e) => setGrantRate(e.target.value)}
+          step="0.01"
+          min="0"
+          max="1"
           placeholder="0.75"
           style={{ margin: "0px 0px 0px 20px" }}
         />
       </div>
       <button
+        onClick={calc}
         style={{ margin: "20px 0px 0px 0px" }}
       >
         計算
