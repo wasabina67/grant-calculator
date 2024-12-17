@@ -11,7 +11,7 @@ function App() {
         <li>補助率</li>
         <ul>
           <li>補助金の補助率</li>
-          <li>で入力</li>
+          <li>0 以上 1 以下 で入力</li>
         </ul>
         <li>事業費</li>
         <ul>
