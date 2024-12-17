@@ -5,7 +5,17 @@ function App() {
   const [grantRate, setGrantRate] = useState("");
   const [result, setResult] = useState(null);
 
-  const calc = () => {};
+  const calc = () => {
+    const limit = parseFloat(grantLimit);
+    const rate = parseFloat(grantRate);
+
+    if (limit > 0 && rate >= 0 && rate <= 1) {
+      const r = (limit / rate).toFixed(2);
+      setResult(r);
+    } else {
+      setResult(null);
+    }
+  };
 
   return (
     <div style={{ maxWidth: "500px", margin: "0 auto", fontFamily: "Arial, sans-serif" }}>
