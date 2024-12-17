@@ -9,7 +9,12 @@ function App() {
     const limit = parseFloat(grantLimit);
     const rate = parseFloat(grantRate);
 
-    if (limit > 0 && rate >= 0 && rate <= 1) {
+    if (isNaN(limit) || isNaN(rate)) {
+      setResult(null);
+      return;
+    }
+
+    if (limit > 0 && rate > 0 && rate <= 1) {
       const r = (limit / rate).toFixed(2);
       setResult(r);
     } else {
@@ -63,7 +68,7 @@ function App() {
           value={grantRate}
           onChange={(e) => setGrantRate(e.target.value)}
           step="0.01"
-          min="0"
+          min="0.01"
           max="1"
           placeholder="0.75"
           style={{ margin: "0px 0px 0px 20px" }}
