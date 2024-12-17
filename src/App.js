@@ -44,6 +44,9 @@ function App() {
         <input
           type="number"
           id="limit"
+          value={grantLimit}
+          onChange={(e) => setGrantLimit(e.target.value)}
+          placeholder="200"
           style={{ margin: "0px 0px 0px 20px" }}
         />
       </div>
@@ -54,6 +57,9 @@ function App() {
         <input
           type="number"
           id="rate"
+          value={grantRate}
+          onChange={(e) => setGrantRate(e.target.value)}
+          placeholder="0.75"
           style={{ margin: "0px 0px 0px 20px" }}
         />
       </div>
@@ -64,7 +70,7 @@ function App() {
       </button>
       <div>
         <h3 style={{ marginBottom: "5px" }}>事業費</h3>
-        <p style={{ margin: "0px 0px 0px 20px" }}>266.67 万円</p>
+        <p style={{ margin: "0px 0px 0px 20px" }}><strong>{result}</strong> 万円</p>
       </div>
     </div>
   );
