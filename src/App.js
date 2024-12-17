@@ -5,15 +5,18 @@ function App() {
       <ul style={{ padding: "0px 0px 0px 20px" }}>
         <li>補助上限</li>
         <ul>
-          <li>aaaaaaaaaaaa</li>
+          <li>補助金の上限額</li>
+          <li>万単位 で入力</li>
         </ul>
         <li>補助率</li>
         <ul>
-          <li>aaaaaaaaaaaa</li>
+          <li>補助金の補助率</li>
+          <li>で入力</li>
         </ul>
         <li>事業費</li>
         <ul>
           <li>補助上限を適応するために必要な最低額の事業費</li>
+          <li>補助上限 / 補助率 で計算</li>
         </ul>
       </ul>
       <div>
