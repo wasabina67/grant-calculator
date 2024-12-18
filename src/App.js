@@ -29,7 +29,7 @@ function App() {
         <li>補助上限</li>
         <ul>
           <li>補助金の上限額</li>
-          <li>万単位 で入力</li>
+          <li>1 以上 9999 以下 で入力</li>
         </ul>
         <li>補助率</li>
         <ul>
