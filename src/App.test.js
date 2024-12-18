@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-const runTest = ({ limit, rate, expectedResult }) => {
-  test('first', () => {
+const runTest = ({ limit, rate, expectedResult, index }) => {
+  test(`Test case ${index + 1}`, () => {
     render(<App />);
 
     const grantLimitInput = screen.getByPlaceholderText('200');
@@ -30,5 +30,5 @@ const testCases = [
 ];
 
 testCases.forEach(({ limit, rate, expectedResult }, index) => {
-  runTest({ limit: limit, rate: rate, expectedResult: expectedResult });
+  runTest({ limit: limit, rate: rate, expectedResult: expectedResult, index: index });
 });
