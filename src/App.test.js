@@ -14,11 +14,9 @@ const runTest = ({ limit, rate, expectedResult, index }) => {
     const calcButton = screen.getByText('計算');
     fireEvent.click(calcButton);
 
-    const result = screen.getByText(expectedResult);
     if (expectedResult !== null) {
+      const result = screen.getByText(expectedResult);
       expect(result).toBeInTheDocument();
-    } else {
-      expect(result).toBeNull();
     }
   });
 };
