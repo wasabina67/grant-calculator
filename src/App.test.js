@@ -35,6 +35,17 @@ const testCases = [
   { limit: '1', rate: '1', expectedResult: '1.00' },
   { limit: '9999', rate: '0.01', expectedResult: '999900.00' },
   { limit: '9999', rate: '1', expectedResult: '9999.00' },
+  { limit: '', rate: '0.75', expectedResult: null },
+  { limit: '200', rate: '', expectedResult: null },
+  { limit: '', rate: '', expectedResult: null },
+  { limit: 'aaa', rate: '0.75', expectedResult: null },
+  { limit: '200', rate: 'aaa', expectedResult: null },
+  { limit: 'aaa', rate: 'aaa', expectedResult: null },
+  { limit: '0', rate: '0.75', expectedResult: null },
+  { limit: '200', rate: '0', expectedResult: null },
+  { limit: '200', rate: '1.1', expectedResult: null },
+  { limit: '0', rate: '0', expectedResult: null },
+  { limit: '0', rate: '1.1', expectedResult: null },
 ];
 
 testCases.forEach(({ limit, rate, expectedResult }, index) => {
