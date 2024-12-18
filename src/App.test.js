@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-const runTest = ({limit, rate, expectedResult}) => {
+const runTest = ({ limit, rate, expectedResult }) => {
   test('first', () => {
     render(<App />);
 
