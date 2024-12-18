@@ -14,7 +14,7 @@ function App() {
       return;
     }
 
-    if (limit > 0 && rate > 0 && rate <= 1) {
+    if (limit > 0 && rate >= 0.01 && rate <= 1) {
       const r = (limit / rate).toFixed(2);
       setResult(r);
     } else {
@@ -34,7 +34,7 @@ function App() {
         <li>補助率</li>
         <ul>
           <li>補助金の補助率</li>
-          <li>0 以上 1 以下 で入力</li>
+          <li>0.01 以上 1 以下 で入力</li>
         </ul>
         <li>事業費</li>
         <ul>
