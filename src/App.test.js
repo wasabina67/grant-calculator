@@ -24,9 +24,11 @@ const runTest = ({ limit, rate, expectedResult, index }) => {
 };
 
 const testCases = [
+  { limit: '100', rate: '0.75', expectedResult: '133.33' },
   { limit: '200', rate: '0.75', expectedResult: '266.67' },
-  { limit: '200', rate: '0.75', expectedResult: '266.67' },
-  { limit: '200', rate: '0.75', expectedResult: '266.67' },
+  { limit: '300', rate: '0.75', expectedResult: '400.00' },
+  { limit: '400', rate: '0.75', expectedResult: '533.33' },
+  { limit: '500', rate: '0.75', expectedResult: '666.67' },
 ];
 
 testCases.forEach(({ limit, rate, expectedResult }, index) => {
