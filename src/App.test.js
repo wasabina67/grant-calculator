@@ -23,4 +23,10 @@ const runTest = ({ limit, rate, expectedResult }) => {
   });
 };
 
+const testCases = [
+  { limit: '200', rate: '0.75', expectedResult: '266.67' },
+  { limit: '200', rate: '0.75', expectedResult: '266.67' },
+  { limit: '200', rate: '0.75', expectedResult: '266.67' },
+];
+
 runTest({ limit: '200', rate: '0.75', expectedResult: '266.67' });
