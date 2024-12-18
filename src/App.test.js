@@ -15,7 +15,11 @@ const runTest = ({limit, rate, expectedResult}) => {
     fireEvent.click(calcButton);
 
     const result = screen.getByText(expectedResult);
-    expect(result).toBeInTheDocument();
+    if (expectedResult !== null) {
+      expect(result).toBeInTheDocument();
+    } else {
+      expect(result).toBeNull();
+    }
   });
 };
 
